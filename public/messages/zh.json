@@ -1,0 +1,73 @@
+{
+  "header": {
+    "home": "主页",
+    "about": "关于",
+    "projects": "项目",
+    "skills": "技能",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "前端开发者",
+    "subtitle": "我构建快速、可扩展且无障碍的网页界面，提供流畅的用户体验，并在现代浏览器和设备上完美运行。",
+    "getInTouch": "联系我"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "热情的开发者，拥有 3 年以上经验",
+    "story": {
+      "title": "我的故事",
+      "p1": "你好，我是 Alexei —— 一名拥有 3 年以上经验的前端开发者，专注于打造现代、响应式、用户友好的网页应用。",
+      "p2": "我专注于 React 及其生态系统，使用如 Next.js、Redux Toolkit、Zustand、Tailwind 等工具，以及组件库如 shadcn/ui、Ant Design、Material UI 和 Radix UI。我注重简洁的设计、流畅的用户体验和可访问性 —— 无论是通过 next-themes 构建可变主题界面，使用 next-intl 和 i18next 实现本地化，还是使用 Framer Motion 添加富有表现力的动画。",
+      "p3": "我也使用图表库（Nivo、Recharts），集成 API（使用 fetch 或 axios 调用 REST/RPC 接口），并构建支持区块链的界面，使用 Web3.js、viem、LedgerHQ 和 BigNumber.js。性能与可扩展性至关重要，因此我依赖如 Vite 和 RSBuild 等现代工具来实现快速构建与稳固架构。",
+      "p4": "我喜欢将创意变为精致、互动的产品 —— 始终关注细节，并以用户为中心。"
+    },
+    "feature1": {
+      "title": "整洁的代码",
+      "description": "编写可维护、可扩展的代码"
+    },
+    "feature2": {
+      "title": "以用户为中心",
+      "description": "专注于用户体验与可访问性"
+    },
+    "feature3": {
+      "title": "高性能",
+      "description": "优化速度与效率"
+    },
+    "technologies": "我使用的技术"
+  },
+  "projects": {
+    "title": "项目",
+    "description": "以下是我最近参与的一些项目",
+    "project1": {
+      "description": "一个现代、响应式的网站，展示了 Fusion 区块链的核心信息、生态系统、使命和技术。"
+    },
+    "project2": {
+      "description": "一个功能完整的 Fusion 区块链浏览器，提供有关区块、交易、地址和代币的实时数据。FSNScan 帮助用户和开发者追踪链上活动。"
+    },
+    "project3": {
+      "description": "一个安全、非托管的网页界面，用于与 Fusion 区块链交互。"
+    }
+  },
+  "skills": {
+    "title": "技能",
+    "description": "我用来实现创意的技术与工具",
+    "core": "核心",
+    "ui": "界面",
+    "tools": "工具",
+    "web3": "Web3"
+  },
+  "contact": {
+    "title": "让我们合作吧",
+    "description": "有项目想法？让我们讨论如何将你的创意变为现实。",
+    "getInTouch": "联系我",
+    "contactDescription": "我始终对新的机会和有趣的项目保持兴趣。无论你是有问题，还是只是想打个招呼，都欢迎联系我！",
+    "sendMessage": "发送消息",
+    "sendButton": "发送",
+    "subject": "主题",
+    "message": "消息",
+    "error": {
+      "subjectRequired": "主题不能为空",
+      "messageRequired": "消息不能为空"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Front End Developer",
+    "subtitle": "I build fast, scalable, and accessible web interfaces that provide smooth user experiences and work flawlessly across modern browsers and devices.",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate developer with 3+ years of experience",
+    "story": {
+      "title": "My Story",
+      "p1": "Hi, I’m Alexei — a frontend developer with 3+ years of experience crafting modern, responsive, and user-friendly web applications.",
+      "p2": "I specialize in React and its ecosystem, using tools like Next.js, Redux Toolkit, Zustand, Tailwind, and component libraries such as shadcn/ui, Ant Design, Material UI, and Radix UI. I care about clean design, smooth UX, and accessibility — whether it's building themeable interfaces with next-themes, localized apps with next-intl and i18next, or adding meaningful motion with Framer Motion.",
+      "p3": "I also work with charts (Nivo, Recharts), integrate with APIs (REST/RPC via fetch or axios), and build blockchain-enabled interfaces using Web3.js, viem, LedgerHQ, and BigNumber.js. Performance and scalability are key, so I rely on modern tools like Vite and RSBuild for fast builds and solid architecture.",
+      "p4": "I enjoy turning ideas into polished, interactive products — always with attention to detail and a user-first approach."
+    },
+     "feature1": {
+      "title": "Clean Code",
+      "description": "Writing maintainable and scalable code"
+    },
+    "feature2": {
+      "title": "User-Centered",
+      "description": "Focusing on user experience and accessibility"
+    },
+    "feature3": {
+      "title": "Performance",
+      "description": "Optimizing for speed and efficiency"
+    },
+    "technologies": "Technologies I Work With"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on recently",
+    "project1": {
+      "description": "A modern, responsive website that presents key information about the Fusion blockchain, its ecosystem, mission, and technology."
+    },
+    "project2": {
+      "description": "A full-featured block explorer for the Fusion blockchain, providing real-time data on blocks, transactions, addresses, and tokens. FSNScan helps users and developers track on-chain activity."
+    },
+    "project3": {
+      "description": "Is a secure, non-custodial web interface for interacting with the Fusion blockchain."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Technologies and tools I use to bring ideas to life",
+    "core": "Core",
+    "ui": "UI",
+    "tools": "Tools",
+    "web3": "Web3"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Have a project in mind? Let's discuss how we can bring your ideas to life.",
+    "getInTouch": "Get In Touch",
+    "contactDescription": "I'm always interested in new opportunities and interesting projects. Whether you have a question or just want to say hi, feel free to reach out!",
+    "sendMessage": "Send a Message",
+    "sendButton": "Send Message",
+    "subject": "Subject",
+    "message": "Message",
+    "error": {
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
+    }
+  }
+}

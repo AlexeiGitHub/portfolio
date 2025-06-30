@@ -1,0 +1,73 @@
+{
+  "header": {
+    "home": "Anasayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Frontend Geliştirici",
+    "subtitle": "Modern tarayıcılar ve cihazlarda sorunsuz çalışan, hızlı, ölçeklenebilir ve erişilebilir web arayüzleri oluşturuyorum.",
+    "getInTouch": "İletişime Geçin"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "3+ yıllık tecrübesi olan tutkulu bir geliştirici",
+    "story": {
+      "title": "Benim Hikayem",
+      "p1": "Merhaba, ben Alexei — modern, responsive ve kullanıcı dostu web uygulamaları geliştirmede 3+ yıllık deneyime sahip bir frontend geliştiriciyim.",
+      "p2": "React ve ekosisteminde uzmanlaşmıştım; Next.js, Redux Toolkit, Zustand, Tailwind gibi araçlar ve shadcn/ui, Ant Design, Material UI ve Radix UI gibi bileşen kütüphanelerini kullanıyorum. Temiz tasarım, akıcı UX ve erişilebilirlik konularına önem veriyorum — next-themes ile temalı arayüzler, next-intl ve i18next ile yerelleştirilmiş uygulamalar veya Framer Motion ile anlamlı animasyonlar oluşturmada deneyimliyim.",
+      "p3": "Ayrıca Nivo ve Recharts gibi grafik kütüphaneleriyle çalışıyorum, REST/RPC API entegrasyonları (fetch veya axios aracılığıyla) yapıyorum ve Web3.js, viem, LedgerHQ ve BigNumber.js kullanarak blockchain destekli arayüzler geliştiriyorum. Performans ve ölçeklenebilirlik çok önemli olduğu için Vite ve RSBuild gibi modern araçlara güveniyorum; hızlı derleme süreçleri ve sağlam mimariler sağlıyorlar.",
+      "p4": "Fikirleri şık ve etkileşimli ürünlere dönüştürmeyi seviyorum. Her zaman detaylara dikkat ediyor ve kullanıcı odaklı yaklaşımı benimsiyorum."
+    },
+    "feature1": {
+      "title": "Temiz Kod",
+      "description": "Bakımı kolay ve ölçeklenebilir kod yazmak"
+    },
+    "feature2": {
+      "title": "Kullanıcı Odaklı",
+      "description": "Kullanıcı deneyimi ve erişilebilirliğe odaklanmak"
+    },
+    "feature3": {
+      "title": "Performans",
+      "description": "Hız ve verimlilik açısından optimizasyon"
+    },
+    "technologies": "Çalıştığım Teknolojiler"
+  },
+  "projects": {
+    "title": "Projeler",
+    "description": "Yakın zamanda üzerinde çalıştığım bazı projeler aşağıdadır",
+    "project1": {
+      "description": "Fusion blok zinciri, ekosistemi, misyonu ve teknolojisi hakkında ana bilgileri sunan modern ve responsive web sitesi."
+    },
+    "project2": {
+      "description": "Fusion blok zinciri için tam özellikli bir blok gezgini; bloklar, işlemler, adresler ve token’lar hakkında gerçek zamanlı veri sağlar. FSNScan, kullanıcıların ve geliştiricilerin zincir içi aktiviteleri takip etmesine yardımcı olur."
+    },
+    "project3": {
+      "description": "Fusion blok zinciri ile etkileşim kurmak için güvenli, kastodyum dışı bir web arayüzüdür."
+    }
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "description": "Fikirleri hayata geçirmek için kullandığım teknolojiler ve araçlar",
+    "core": "Temel Teknolojiler",
+    "ui": "Arayüz (UI)",
+    "tools": "Araçlar",
+    "web3": "Web3"
+  },
+  "contact": {
+    "title": "Beraber Çalışalım",
+    "description": "Aklınızda bir proje var mı? Fikirlerinizi hayata geçirme konusunda beraber çalışalım.",
+    "getInTouch": "Benimle İletişime Geçin",
+    "contactDescription": "Yeni fırsatlar ve ilginç projelere her zaman açığım. Bir sorunuz varsa ya da sadece merhaba demek istiyorsanız, çekinmeden ulaşmaktan lütfen tereddüt etmeyin!",
+    "sendMessage": "Mesaj Gönder",
+    "sendButton": "Mesajı Gönder",
+    "subject": "Konu",
+    "message": "Mesaj",
+    "error": {
+      "subjectRequired": "Konu zorunludur",
+      "messageRequired": "Mesaj zorunludur"
+    }
+  }
+}

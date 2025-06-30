@@ -1,0 +1,73 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Desarrollador Front End",
+    "subtitle": "Creo interfaces web rápidas, escalables y accesibles que ofrecen experiencias de usuario fluidas y funcionan perfectamente en navegadores y dispositivos modernos.",
+    "getInTouch": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Desarrollador apasionado con más de 3 años de experiencia",
+    "story": {
+      "title": "Mi Historia",
+      "p1": "Hola, soy Alexei — un desarrollador frontend con más de 3 años de experiencia creando aplicaciones web modernas, responsivas y fáciles de usar.",
+      "p2": "Me especializo en React y su ecosistema, utilizando herramientas como Next.js, Redux Toolkit, Zustand, Tailwind, y bibliotecas de componentes como shadcn/ui, Ant Design, Material UI y Radix UI. Me preocupo por el diseño limpio, la experiencia del usuario (UX) fluida y la accesibilidad — ya sea construyendo interfaces temáticas con next-themes, aplicaciones localizadas con next-intl y i18next, o agregando movimiento significativo con Framer Motion.",
+      "p3": "También trabajo con gráficos (Nivo, Recharts), integro APIs (REST/RPC mediante fetch o axios), y desarrollo interfaces habilitadas para blockchain usando Web3.js, viem, LedgerHQ y BigNumber.js. El rendimiento y la escalabilidad son clave, por eso confío en herramientas modernas como Vite y RSBuild para construcciones rápidas y una arquitectura sólida.",
+      "p4": "Disfruto transformar ideas en productos interactivos y terminados — siempre prestando atención a los detalles y priorizando al usuario."
+    },
+    "feature1": {
+      "title": "Código Limpio",
+      "description": "Escribir código mantenible y escalable"
+    },
+    "feature2": {
+      "title": "Centrado en el Usuario",
+      "description": "Enfocado en la experiencia del usuario y la accesibilidad"
+    },
+    "feature3": {
+      "title": "Rendimiento",
+      "description": "Optimización para velocidad y eficiencia"
+    },
+    "technologies": "Tecnologías con las que trabajo"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Estos son algunos de los proyectos en los que he trabajado recientemente",
+    "project1": {
+      "description": "Un sitio web moderno y responsivo que presenta información clave sobre la blockchain Fusion, su ecosistema, misión y tecnología."
+    },
+    "project2": {
+      "description": "Un explorador de bloques completo para la blockchain Fusion, que proporciona datos en tiempo real sobre bloques, transacciones, direcciones y tokens. FSNScan ayuda a usuarios y desarrolladores a rastrear actividad en la cadena."
+    },
+    "project3": {
+      "description": "Es una interfaz web segura y no custodial para interactuar con la blockchain Fusion."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Tecnologías y herramientas que uso para dar vida a las ideas",
+    "core": "Núcleo",
+    "ui": "Interfaz",
+    "tools": "Herramientas",
+    "web3": "Web3"
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "description": "¿Tienes un proyecto en mente? Hagamoslo realidad juntos.",
+    "getInTouch": "Contáctame",
+    "contactDescription": "Siempre estoy interesado en nuevas oportunidades y proyectos interesantes. Ya sea que tengas una pregunta o solo quieras saludar, ¡no dudes en contactarme!",
+    "sendMessage": "Enviar un mensaje",
+    "sendButton": "Enviar Mensaje",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "error": {
+      "subjectRequired": "El asunto es obligatorio",
+      "messageRequired": "El mensaje es obligatorio"
+    }
+  }
+}
