@@ -25,7 +25,7 @@ export const Projects = ({}: Props) => {
     {
       title: 'Official Fusion website',
       description: t('project1.description'),
-      image: '/projects/fusion.webp',
+      image: '/portfolio/projects/fusion.webp',
       technologies: [
         'React',
         'nivo',
@@ -39,7 +39,7 @@ export const Projects = ({}: Props) => {
     {
       title: 'FSNscan – Blockchain Explorer',
       description: t('project2.description'),
-      image: '/projects/fsnscan.webp',
+      image: '/portfolio/projects/fsnscan.webp',
       technologies: [
         'React',
         'axios',
@@ -58,7 +58,7 @@ export const Projects = ({}: Props) => {
     {
       title: 'MyFusionWallet',
       description: t('project3.description'),
-      image: '/projects/myFusionWallet.webp',
+      image: '/portfolio/projects/myFusionWallet.webp',
       technologies: [
         'React',
         'rsuite',

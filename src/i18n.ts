@@ -86,7 +86,7 @@ i18n
     },
     load: 'languageOnly',
     backend: {
-      loadPath: '/messages/{{lng}}.json'
+      loadPath: '/portfolio/messages/{{lng}}.json'
     }
   });
 

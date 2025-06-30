@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { Portfolio } from '@/app/home/portfolio';
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route index element={<Portfolio />} />
+      <Route path='portfolio' index element={<Portfolio />} />
     </Routes>
   );
 };
