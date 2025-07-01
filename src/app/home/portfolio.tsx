@@ -8,13 +8,12 @@ import { Skills } from '@/components/sections/skills';
 import { useEffect, useState } from 'react';
 
 export const Portfolio = () => {
-  //const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState('hero');
+  const [activeSection, setActiveSection] = useState('home');
   //const { scrollY } = useScroll();
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
+      const sections = ['home', 'about', 'projects', 'skills', 'contact'];
       const viewportHeight = window.innerHeight;
 
       for (const section of sections) {

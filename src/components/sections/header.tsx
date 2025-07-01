@@ -13,31 +13,27 @@ interface Props {
   scrollToSection: (sectionId: string) => void;
 }
 
+const navItems = [
+  { id: 'home' },
+  { id: 'about' },
+  { id: 'projects' },
+  { id: 'skills' },
+  { id: 'contact' }
+];
+
 export const Header = ({ activeSection, scrollToSection }: Props) => {
   const { t } = useTranslation('', { keyPrefix: 'header' });
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
-    { id: 'hero', label: t('home') },
-    { id: 'about', label: t('about') },
-    { id: 'projects', label: t('projects') },
-    { id: 'skills', label: t('skills') },
-    { id: 'contact', label: t('contact') }
-  ];
-
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className='bg-background fixed top-0 z-20 w-screen border-b'
-    >
+    <header className='bg-background fixed top-0 z-20 w-screen border-b'>
       <div className='container mx-auto flex justify-between p-4'>
         {/* Logo */}
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className='from-primary to-secondary cursor-pointer bg-gradient-to-r bg-clip-text text-2xl font-bold text-transparent'
-          onClick={() => scrollToSection('hero')}
+          onClick={() => scrollToSection('home')}
         >
           @0
         </motion.div>
@@ -57,12 +53,12 @@ export const Header = ({ activeSection, scrollToSection }: Props) => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {item.label}
+              {t(item.id)}
               {activeSection === item.id && (
                 <motion.div
-                  layoutId='activeSection'
+                  layoutId='active'
                   className='bg-primary absolute right-0 bottom-0 left-0 h-0.5'
-                  initial={false}
+                  /* initial={false} */
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 />
               )}
@@ -94,7 +90,7 @@ export const Header = ({ activeSection, scrollToSection }: Props) => {
                       setIsOpen(false);
                     }}
                   >
-                    {item.label}
+                    {t(item.id)}
                   </Button>
                 ))}
               </nav>
@@ -102,6 +98,6 @@ export const Header = ({ activeSection, scrollToSection }: Props) => {
           </Sheet>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 };

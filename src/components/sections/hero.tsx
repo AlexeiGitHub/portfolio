@@ -16,7 +16,7 @@ export const Hero = ({ scrollToSection }: Props) => {
 
   return (
     <section
-      id='hero'
+      id='home'
       className='flex min-h-screen items-center justify-center'
     >
       <motion.div

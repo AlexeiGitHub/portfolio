@@ -17,8 +17,7 @@ import {
   GitPullRequestArrowIcon,
   Frame
 } from 'lucide-react';
-import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/shadcn/card';
 
@@ -32,8 +31,6 @@ interface Props {
 
 export const Skills = ({}: Props) => {
   const { t } = useTranslation('', { keyPrefix: 'skills' });
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const skillCategories = [
     {
@@ -91,9 +88,9 @@ export const Skills = ({}: Props) => {
     <section id='skills' className='bg-muted/30 py-20'>
       <div className='container mx-auto px-4'>
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
           className='mb-16 text-center'
         >
@@ -108,7 +105,8 @@ export const Skills = ({}: Props) => {
             <motion.div
               key={categoryIndex}
               initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
             >
               <Card className='h-full'>
@@ -125,13 +123,12 @@ export const Skills = ({}: Props) => {
                     <motion.div
                       key={skillIndex}
                       initial={{ opacity: 0, x: -20 }}
-                      animate={
-                        isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
-                      }
                       transition={{
                         duration: 0.6,
                         delay: categoryIndex * 0.1 + skillIndex * 0.05
                       }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, margin: '-100px' }}
                       className='space-y-2'
                     >
                       <div className='flex items-center justify-between'>

@@ -1,6 +1,5 @@
 import { Code, Palette, Zap } from 'lucide-react';
-import { useInView, motion } from 'motion/react';
-import { useRef } from 'react';
+import { motion } from 'motion/react';
 import { Card, CardContent } from '../ui/shadcn/card';
 import { Badge } from '../ui/shadcn/badge';
 import { useTranslation } from 'react-i18next';
@@ -11,8 +10,6 @@ interface Props {
 
 export const About = ({}: Props) => {
   const { t } = useTranslation('', { keyPrefix: 'about' });
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const features = [
     {
@@ -65,9 +62,9 @@ export const About = ({}: Props) => {
     <section id='about' className='bg-muted/30 py-20'>
       <div className='container mx-auto px-4'>
         <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
           className='mb-16 text-center'
         >
@@ -79,9 +76,10 @@ export const About = ({}: Props) => {
 
         <div className='grid gap-12 md:grid-cols-2'>
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
           >
             <h3 className='mb-6 text-2xl font-semibold'>{t('story.title')}</h3>
             <div className='text-muted-foreground mb-6 space-y-2 leading-relaxed'>
@@ -95,11 +93,10 @@ export const About = ({}: Props) => {
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={
-                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
-                  }
+                  initial={{ opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-100px' }}
                   className='flex items-start space-x-3'
                 >
                   <div className='bg-primary/10 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg'>
@@ -117,9 +114,10 @@ export const About = ({}: Props) => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
           >
             <Card>
               <CardContent className='p-6'>
@@ -131,15 +129,12 @@ export const About = ({}: Props) => {
                     <motion.div
                       key={tech}
                       initial={{ opacity: 0, scale: 0.8 }}
-                      animate={
-                        isInView
-                          ? { opacity: 1, scale: 1 }
-                          : { opacity: 0, scale: 0.8 }
-                      }
                       transition={{
                         duration: 0.4,
                         delay: 0.6 + index * 0.05
                       }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true, margin: '-100px' }}
                     >
                       <Badge
                         variant='outline'

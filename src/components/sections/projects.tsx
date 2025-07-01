@@ -1,5 +1,4 @@
-import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import { motion } from 'motion/react';
 import {
   Card,
   CardContent,
@@ -18,8 +17,6 @@ interface Props {
 
 export const Projects = ({}: Props) => {
   const { t } = useTranslation('', { keyPrefix: 'projects' });
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const projects = [
     {
@@ -80,9 +77,9 @@ export const Projects = ({}: Props) => {
     <section id='projects' className='py-20'>
       <div className='container mx-auto px-4'>
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
           className='mb-16 text-center'
         >
@@ -97,17 +94,16 @@ export const Projects = ({}: Props) => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className=''
             >
               <Card className='group overflow-hidden transition-all duration-300 hover:shadow-lg'>
                 <div className='relative overflow-hidden'>
                   <img
                     src={project.image || 'projects/placeholder.svg'}
                     alt={project.title}
-                    width={400}
-                    height={200}
+                    width={200}
                     className='h-48 w-full object-cover object-top transition-transform duration-300 group-hover:scale-105'
                   />
                   <div className='absolute inset-0 flex items-center justify-center space-x-4 bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100'>

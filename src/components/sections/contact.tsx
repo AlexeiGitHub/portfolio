@@ -1,6 +1,6 @@
 import { Check, Copy, ExternalLink, Linkedin, Mail, Send } from 'lucide-react';
-import { motion, useInView } from 'motion/react';
-import { useRef, useState } from 'react';
+import { motion } from 'motion/react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/shadcn/card';
 
@@ -10,19 +10,17 @@ import { ContactItem } from '../ui/contact-item';
 
 export const Contact = () => {
   const { t } = useTranslation('', { keyPrefix: 'contact' });
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const { copy, copied } = useCopyToClipboard();
 
   return (
-    <section id='contact' className='flex h-screen items-center py-20'>
+    <section id='contact' className='flex items-center py-20'>
       <div className='container mx-auto px-4'>
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
           className='mb-16 text-center'
         >
@@ -36,7 +34,8 @@ export const Contact = () => {
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className='space-y-8'
           >
@@ -104,8 +103,9 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Card>
