@@ -13,10 +13,10 @@
   },
   "about": {
     "title": "Tentang Saya",
-    "subtitle": "Pengembang yang bersemangat dengan pengalaman lebih dari 3 tahun",
+    "subtitle": "Pengembang yang bersemangat dengan pengalaman lebih dari {{years}} tahun",
     "story": {
       "title": "Perjalanan Saya",
-      "p1": "Halo, saya Alexei — seorang pengembang front end dengan pengalaman lebih dari 3 tahun dalam menciptakan aplikasi web modern, responsif, dan ramah pengguna.",
+      "p1": "Halo, saya Alexei — seorang pengembang front end dengan pengalaman lebih dari {{years}} tahun dalam menciptakan aplikasi web modern, responsif, dan ramah pengguna.",
       "p2": "Saya spesialis dalam React dan ekosistemnya, menggunakan alat-alat seperti Next.js, Redux Toolkit, Zustand, Tailwind, serta library komponen seperti shadcn/ui, Ant Design, Material UI, dan Radix UI. Saya peduli terhadap desain yang bersih, pengalaman pengguna (UX) yang lancar, dan aksesibilitas — baik itu membangun antarmuka bertema dengan next-themes, aplikasi berbasis lokalisasi dengan next-intl dan i18next, atau menambahkan animasi bermakna dengan Framer Motion.",
       "p3": "Saya juga bekerja dengan grafik (Nivo, Recharts), integrasi API (REST/RPC melalui fetch atau axios), serta membangun antarmuka berbasis blockchain menggunakan Web3.js, viem, LedgerHQ, dan BigNumber.js. Performa dan skalabilitas adalah hal penting, maka saya mengandalkan alat-alat modern seperti Vite dan RSBuild untuk proses build yang cepat dan arsitektur yang solid.",
       "p4": "Saya menikmati mengubah ide menjadi produk interaktif yang rapi — selalu memperhatikan detail dan mengutamakan pengguna."

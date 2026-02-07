@@ -13,15 +13,15 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Passionate developer with 3+ years of experience",
+    "subtitle": "Passionate developer with {{years}}+ years of experience",
     "story": {
       "title": "My Story",
-      "p1": "Hi, I’m Alexei — a frontend developer with 3+ years of experience crafting modern, responsive, and user-friendly web applications.",
+      "p1": "Hi, I’m Alexei — a frontend developer with {{years}}+ years of experience crafting modern, responsive, and user-friendly web applications.",
       "p2": "I specialize in React and its ecosystem, using tools like Next.js, Redux Toolkit, Zustand, Tailwind, and component libraries such as shadcn/ui, Ant Design, Material UI, and Radix UI. I care about clean design, smooth UX, and accessibility — whether it's building themeable interfaces with next-themes, localized apps with next-intl and i18next, or adding meaningful motion with Framer Motion.",
       "p3": "I also work with charts (Nivo, Recharts), integrate with APIs (REST/RPC via fetch or axios), and build blockchain-enabled interfaces using Web3.js, viem, LedgerHQ, and BigNumber.js. Performance and scalability are key, so I rely on modern tools like Vite and RSBuild for fast builds and solid architecture.",
       "p4": "I enjoy turning ideas into polished, interactive products — always with attention to detail and a user-first approach."
     },
-     "feature1": {
+    "feature1": {
       "title": "Clean Code",
       "description": "Writing maintainable and scalable code"
     },

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Card, CardContent } from '../ui/shadcn/card';
 import { Badge } from '../ui/shadcn/badge';
 import { useTranslation } from 'react-i18next';
+import { getYearsSince2022 } from '../../lib/utils';
 
 interface Props {
   // props here
@@ -10,6 +11,7 @@ interface Props {
 
 export const About = ({}: Props) => {
   const { t } = useTranslation('', { keyPrefix: 'about' });
+  const years = getYearsSince2022();
 
   const features = [
     {
@@ -70,7 +72,7 @@ export const About = ({}: Props) => {
         >
           <h2 className='mb-4 text-3xl font-bold md:text-4xl'>{t('title')}</h2>
           <p className='text-muted-foreground mx-auto max-w-2xl text-lg'>
-            {t('subtitle')}
+            {t('subtitle', { years })}
           </p>
         </motion.div>
 
@@ -83,7 +85,8 @@ export const About = ({}: Props) => {
           >
             <h3 className='mb-6 text-2xl font-semibold'>{t('story.title')}</h3>
             <div className='text-muted-foreground mb-6 space-y-2 leading-relaxed'>
-              <p>{t('story.p1')}</p>
+              <p>{t('story.p1', { years })}</p>
+
               <p>{t('story.p2')}</p>
               <p>{t('story.p3')}</p>
               <p>{t('story.p4')}</p>

@@ -13,10 +13,10 @@
   },
   "about": {
     "title": "Hakkımda",
-    "subtitle": "3+ yıllık tecrübesi olan tutkulu bir geliştirici",
+    "subtitle": "{{years}}+ yıllık tecrübesi olan tutkulu bir geliştirici",
     "story": {
       "title": "Benim Hikayem",
-      "p1": "Merhaba, ben Alexei — modern, responsive ve kullanıcı dostu web uygulamaları geliştirmede 3+ yıllık deneyime sahip bir frontend geliştiriciyim.",
+      "p1": "Merhaba, ben Alexei — modern, responsive ve kullanıcı dostu web uygulamaları geliştirmede {{years}}+ yıllık deneyime sahip bir frontend geliştiriciyim.",
       "p2": "React ve ekosisteminde uzmanlaşmıştım; Next.js, Redux Toolkit, Zustand, Tailwind gibi araçlar ve shadcn/ui, Ant Design, Material UI ve Radix UI gibi bileşen kütüphanelerini kullanıyorum. Temiz tasarım, akıcı UX ve erişilebilirlik konularına önem veriyorum — next-themes ile temalı arayüzler, next-intl ve i18next ile yerelleştirilmiş uygulamalar veya Framer Motion ile anlamlı animasyonlar oluşturmada deneyimliyim.",
       "p3": "Ayrıca Nivo ve Recharts gibi grafik kütüphaneleriyle çalışıyorum, REST/RPC API entegrasyonları (fetch veya axios aracılığıyla) yapıyorum ve Web3.js, viem, LedgerHQ ve BigNumber.js kullanarak blockchain destekli arayüzler geliştiriyorum. Performans ve ölçeklenebilirlik çok önemli olduğu için Vite ve RSBuild gibi modern araçlara güveniyorum; hızlı derleme süreçleri ve sağlam mimariler sağlıyorlar.",
       "p4": "Fikirleri şık ve etkileşimli ürünlere dönüştürmeyi seviyorum. Her zaman detaylara dikkat ediyor ve kullanıcı odaklı yaklaşımı benimsiyorum."

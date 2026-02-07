@@ -31,7 +31,7 @@ export const Projects = ({}: Props) => {
         'rsbuild'
       ],
       /* github: '#', */
-      demo: 'https://fusion.org/'
+      demo: 'https://fusion-org.vercel.app/'
     },
     {
       title: 'FSNscan – Blockchain Explorer',
@@ -50,7 +50,7 @@ export const Projects = ({}: Props) => {
         'antd'
       ],
       /* github: '#', */
-      demo: 'https://fsnscan.com/'
+      demo: 'https://fsnscan-com.vercel.app/'
     },
     {
       title: 'MyFusionWallet',
@@ -69,7 +69,7 @@ export const Projects = ({}: Props) => {
         'typescript'
       ],
       /* github: '#', */
-      demo: 'https://myfusionwallet.com/'
+      demo: 'https://myfsnwallet.vercel.app/'
     }
   ];
 

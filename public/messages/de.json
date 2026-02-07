@@ -13,10 +13,10 @@
   },
   "about": {
     "title": "Über Mich",
-    "subtitle": "Leidenschaftlicher Entwickler mit über 3 Jahren Erfahrung",
+    "subtitle": "Leidenschaftlicher Entwickler mit über {{years}} Jahren Erfahrung",
     "story": {
       "title": "Meine Geschichte",
-      "p1": "Hallo, ich bin Alexei — ein Frontend-Entwickler mit über 3 Jahren Erfahrung in der Erstellung moderner, responsiver und benutzerfreundlicher Webanwendungen.",
+      "p1": "Hallo, ich bin Alexei — ein Frontend-Entwickler mit über {{years}} Jahren Erfahrung in der Erstellung moderner, responsiver und benutzerfreundlicher Webanwendungen.",
       "p2": "Ich spezialisiere mich auf React und dessen Ökosystem und verwende Tools wie Next.js, Redux Toolkit, Zustand, Tailwind sowie Komponentenbibliotheken wie shadcn/ui, Ant Design, Material UI und Radix UI. Mir ist ein sauberes Design, eine flüssige UX und Barrierefreiheit wichtig — sei es das Erstellen thematisierbarer Oberflächen mit next-themes, lokalisierte Anwendungen mit next-intl und i18next oder sinnvolle Animationen mit Framer Motion.",
       "p3": "Ich arbeite auch mit Diagrammen (Nivo, Recharts), API-Integrationen (REST/RPC via fetch oder axios) und entwickle blockchain-fähige Oberflächen mit Web3.js, viem, LedgerHQ und BigNumber.js. Leistungsfähigkeit und Skalierbarkeit sind entscheidend, deshalb verlasse ich mich auf moderne Tools wie Vite und RSBuild für schnelle Builds und stabile Architektur.",
       "p4": "Es macht mir Spaß, Ideen in hochwertige, interaktive Produkte umzuwandeln — stets mit Liebe zum Detail und einem nutzerzentrierten Ansatz."
